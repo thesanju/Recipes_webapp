@@ -1,0 +1,34 @@
+/* Image reset styles to ensure all images display properly */
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Force images to be visible in specific contexts */
+.recipe-card img,
+.card img,
+[class*="recipe"] img,
+[class*="card"] img,
+a img,
+div > img,
+figure img {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Reset any opacity transitions that might affect images */
+img {
+  transition: transform 0.5s ease !important;
+  opacity: 1 !important;
+}

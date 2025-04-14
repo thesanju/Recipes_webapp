@@ -1,0 +1,29 @@
+/* ...existing code... */
+body {
+  font-family: 'Space Mono', 'Courier New', monospace;
+  /* ...existing code... */
+}
+
+/* Ensure images are always visible */
+img {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+}
+
+/* Ensure recipe card images display properly */
+.recipe-card img,
+[class*="recipe"] img,
+[class*="card"] img {
+  opacity: 1 !important;
+  transition: transform 0.5s ease;
+}
+
+/* Add default image styles */
+.recipe-image,
+.card-image {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+/* ...existing code... */
